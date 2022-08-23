@@ -1,0 +1,184 @@
+
+Claudio Adones Araya@DESKTOP-HDI7RAC MINGW64 ~ (main)
+$ cd desktop/miweb
+
+Claudio Adones Araya@DESKTOP-HDI7RAC MINGW64 ~/desktop/miweb (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   archivo2.py
+
+
+Claudio Adones Araya@DESKTOP-HDI7RAC MINGW64 ~/desktop/miweb (master)
+$ git commit -m "agregando un cambio al archivo 2 de python"
+[master 28e7134] agregando un cambio al archivo 2 de python
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Claudio Adones Araya@DESKTOP-HDI7RAC MINGW64 ~/desktop/miweb (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Claudio Adones Araya@DESKTOP-HDI7RAC MINGW64 ~/desktop/miweb (master)
+$ ls
+archivo2.py  repositorio1.py
+
+Claudio Adones Araya@DESKTOP-HDI7RAC MINGW64 ~/desktop/miweb (master)
+$ rm archivo2.py
+
+Claudio Adones Araya@DESKTOP-HDI7RAC MINGW64 ~/desktop/miweb (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    archivo2.py
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Claudio Adones Araya@DESKTOP-HDI7RAC MINGW64 ~/desktop/miweb (master)
+$ git add archivo2.py
+
+Claudio Adones Araya@DESKTOP-HDI7RAC MINGW64 ~/desktop/miweb (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    archivo2.py
+
+
+Claudio Adones Araya@DESKTOP-HDI7RAC MINGW64 ~/desktop/miweb (master)
+$ git commit -m "Eliminando el archivo2.py"
+[master 59e8517] Eliminando el archivo2.py
+ 1 file changed, 1 deletion(-)
+ delete mode 100644 archivo2.py
+
+Claudio Adones Araya@DESKTOP-HDI7RAC MINGW64 ~/desktop/miweb (master)
+$ ls
+repositorio1.py
+
+Claudio Adones Araya@DESKTOP-HDI7RAC MINGW64 ~/desktop/miweb (master)
+$ git rm repositorio1.py
+rm 'repositorio1.py'
+
+Claudio Adones Araya@DESKTOP-HDI7RAC MINGW64 ~/desktop/miweb (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    repositorio1.py
+
+
+Claudio Adones Araya@DESKTOP-HDI7RAC MINGW64 ~/desktop/miweb (master)
+$ ls
+
+Claudio Adones Araya@DESKTOP-HDI7RAC MINGW64 ~/desktop/miweb (master)
+$ git restore --staged repositorio1.py
+
+Claudio Adones Araya@DESKTOP-HDI7RAC MINGW64 ~/desktop/miweb (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    repositorio1.py
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Claudio Adones Araya@DESKTOP-HDI7RAC MINGW64 ~/desktop/miweb (master)
+$ ls
+
+Claudio Adones Araya@DESKTOP-HDI7RAC MINGW64 ~/desktop/miweb (master)
+$ git restore repositorio1.py
+
+Claudio Adones Araya@DESKTOP-HDI7RAC MINGW64 ~/desktop/miweb (master)
+$ ls
+repositorio1.py
+
+Claudio Adones Araya@DESKTOP-HDI7RAC MINGW64 ~/desktop/miweb (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Claudio Adones Araya@DESKTOP-HDI7RAC MINGW64 ~/desktop/miweb (master)
+$ mv repositorio1.py repositorio1.txt
+
+Claudio Adones Araya@DESKTOP-HDI7RAC MINGW64 ~/desktop/miweb (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    repositorio1.py
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        repositorio1.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Claudio Adones Araya@DESKTOP-HDI7RAC MINGW64 ~/desktop/miweb (master)
+$ git add repositorio1 repositorio1.txt
+fatal: pathspec 'repositorio1' did not match any files
+
+Claudio Adones Araya@DESKTOP-HDI7RAC MINGW64 ~/desktop/miweb (master)
+$ git add repositorio1 repositorio1.txt
+fatal: pathspec 'repositorio1' did not match any files
+
+Claudio Adones Araya@DESKTOP-HDI7RAC MINGW64 ~/desktop/miweb (master)
+$ git add repositorio1.py repositorio1.txt
+
+Claudio Adones Araya@DESKTOP-HDI7RAC MINGW64 ~/desktop/miweb (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        renamed:    repositorio1.py -> repositorio1.txt
+
+
+Claudio Adones Araya@DESKTOP-HDI7RAC MINGW64 ~/desktop/miweb (master)
+$ git commit -m "renombrando archivo repositorio1.py a repositorio1.txt"
+[master b1aa97a] renombrando archivo repositorio1.py a repositorio1.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ rename repositorio1.py => repositorio1.txt (100%)
+
+Claudio Adones Araya@DESKTOP-HDI7RAC MINGW64 ~/desktop/miweb (master)
+$
+
+
+
+SUBIENDO PROGRAMA AL SERVIDOR DEL REPOSITORIO
+
+
+Claudio Adones Araya@DESKTOP-HDI7RAC MINGW64 ~/desktop/miweb (master)
+$ git remote add origin https://github.com/LOBOferoz898/practica_git.git
+
+Claudio Adones Araya@DESKTOP-HDI7RAC MINGW64 ~/desktop/miweb (master)
+$ git push -u origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/LOBOferoz898/practica_git.git'
+
+Claudio Adones Araya@DESKTOP-HDI7RAC MINGW64 ~/desktop/miweb (master)
+$ git push -u origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/LOBOferoz898/practica_git.git'
+
+Claudio Adones Araya@DESKTOP-HDI7RAC MINGW64 ~/desktop/miweb (master)
+$ git branch -M main
+
+Claudio Adones Araya@DESKTOP-HDI7RAC MINGW64 ~/desktop/miweb (main)
+$ git push -u origin main
+Enumerating objects: 11, done.
+Counting objects: 100% (11/11), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (11/11), 1.07 KiB | 183.00 KiB/s, done.
+Total 11 (delta 0), reused 0 (delta 0), pack-reused 0
+
+To https://github.com/LOBOferoz898/practica_git.git
+ * [new branch]      main -> main
+Branch 'main' set up to track remote branch 'main' from 'origin'.
+
+Claudio Adones Araya@DESKTOP-HDI7RAC MINGW64 ~/desktop/miweb (main)
+$
